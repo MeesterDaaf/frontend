@@ -53,6 +53,7 @@ Nu willen we de taken die _gedaan_ zijn splitten van de taken die nog gedaan moe
 We gaan eerst even drie lijstjes maken:
 
 #### Opdracht 3a - Alle taken
+De code moet boven de code van opdracht 2 komen te staan
 ```html
     <h1>Alle taken</h1>
 ```

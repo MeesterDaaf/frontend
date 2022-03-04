@@ -16,20 +16,13 @@
 
     <div id="app">
         <!-- Hier begint je app -->
-        <h1>Alle taken</h1>
-        <ul>
-            <li v-for="task in tasks" v-text="task.description">
-        </ul>
+        <!-- Plaats de code voor Opdracht 3a hier -->
+        <!-- Plaats de code voor Opdracht 2 hier -->
 
-        <h1>Taken te doen</h1>
-        <ul>
-            <li v-for="task in incompleteTasks" v-text="task.description" v-bind:class="task-done">
-        </ul>
+        <!-- Plaats de code voor Opdracht 3b hier -->
 
-        <h1>Taken gedaan</h1>
-        <ul>
-            <li v-for="task in completedTasks" v-text="task.description">
-        </ul>
+        <!-- Plaats de code voor Opdracht 3c hier -->
+
 
 
     </div><!-- Hier eindigt de app -->
@@ -37,34 +30,9 @@
 
 
     <!-- Plaats de code voor Opdracht 1 hier -->
-    <script>
+    <!-- Vul de code aan met de code van Opdracht 4 -->
+    <!-- Vul de code aan met de code van Opdracht 5 -->
 
-        new Vue(
-            {
-                el: "#app",
-                data: {
-                    tasks: [
-                        { description: 'Maak huiswerk rekenen', completed: true }, //dit is 1 object
-                        { description: 'Vraag SLBer naar keuzedelen', completed: false },  //dit is nog 1 object
-                        { description: 'Onderzoek een software pakket', completed: false }, //idem
-                        { description: 'Maak huiswerk Frontend', completed: false }, //idem
-                        { description: 'Bel tandarts voor een afspraak', completed: true }, //idem
-                        { description: 'Plan een meeting met team', completed: false } //idem
-                    ]
-                },
-
-                computed: {
-                    incompleteTasks() {
-                        return this.tasks.filter(task => !task.completed)
-                    },
-                    completedTasks() {
-                        return this.tasks.filter(task => task.completed)
-                    }
-                }
-            }
-        );
-
-    </script>
 
 </body>
 
