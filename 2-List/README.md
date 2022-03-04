@@ -47,7 +47,7 @@ Zet bovenstaande code in `index.html`
 
 ## Opdracht 2 - Loopen door array
 
-Je kunt door deze array loopen met Vue JS syntax. Stel we maken een lijstje van deze namen dan hebben we de volgende code nodig:
+Je kunt door deze array loopen met Vue JS syntax. Stel we maken een lijstje van deze namen dan hebben we de volgende code nodig: `v-for`, zie hieronder
 
 ```html
 
@@ -119,9 +119,11 @@ Nu willen we natuurlijk geen alert-box zien maar wel een naam aan de lijst kunne
             },
             methods: {
                 addName() {
-                   this.names.push(this.newName)
+                    this.names.push(this.newName)
+                    this.newName = '';
                 }
             }
+
         }
     );
 
@@ -138,3 +140,5 @@ De button uit opdracht 3 spreekt nu nog de `showAlert`-methode aan. Maar we moet
 ```
 
 Probeer maar uit!
+
+Oh en als je het echt wilt weten: je hebt nu met __Vue Event Listeners__ gewerkt.
