@@ -1,6 +1,6 @@
 # Frontend Keuzedeel
 
-## CSS GRID
+## CSS GRID - les 1
 
 ### Introductie
 
@@ -61,7 +61,7 @@ The space between two adjacent row and two adjacent column grid lines. It’s a 
 
 ![Grid Cell](images/terms-grid-cell.svg)
 
-#### Grid Track (Grid strook)
+#### Grid Track (Grid Strook)
 
 Dit is de ruimte tussen twee Grid lijnen. Je kunt denken in rijenen en kolomen. In onderstaand voorbeeld is de Grid track tussen de tweede en derde grid lijen.
 
@@ -131,7 +131,7 @@ Wat zie je nu?
 ### Fractions
 
 Je hoeft natuurlijk niet met pixels (px) te werken. Je kunt ook tegen de container zeggen dat het een fractie (een deel van het geheel) moet nemen.
-Je kunt dit doen door `fr` te gebruiken. Als je nog steeds drie gelijke kolommen wilt maken dan is elk deel _een derde van het geheel_. Dit codeer je zo:
+Je kunt dit doen door `fr` te gebruiken. Als je nog steeds _drie_ gelijke kolommen wilt maken dan is elk deel _een derde van het geheel_. Dit codeer je zo:
 
 ```html
 <style>
@@ -152,3 +152,4 @@ Maar je kunt ook dit doen:
 }
 </style>
 ```
+
