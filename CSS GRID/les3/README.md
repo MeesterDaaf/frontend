@@ -101,3 +101,5 @@ footer{
   grid-column-end: 4;
 }
 ```
+
+Heb je een goed eindresultaat? Zie afbeelding 1 bij deze les.
