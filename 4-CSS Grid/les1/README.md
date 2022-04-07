@@ -7,6 +7,8 @@
 Vroeger maakten men layouts met `<table>` tags. Daarna gebruikte men een lange tijd CSS `float` of CSS `display:inline-block` om een layout te maken.
 Maar naast Flexbox (eendimensionale flow) is er nu __GRID__ (tweedimensionaal).
 
+![](images/css-grid-vs-flexbox.png)
+
 Grid is de eerste CSS Module die specific gecreerd is om het layout probleem op te lossen.
 
 ### Terminologie
