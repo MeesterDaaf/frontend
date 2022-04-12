@@ -51,13 +51,7 @@ Laten we eerst even kijken hoe een Grid eruit kan zien:
             height: 400px;
         }
 
-        .container * {
-            background-color: orange;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
+  
         .container * {
             background-color: orange;
             display: flex;
@@ -92,7 +86,7 @@ Daarvoor moeten we bovenstaande code wel wat aanpassen. We hebben nu geen 25 ite
 Je ziet een groene cel op de eerste rij en in de laatste kolom. Dus dat coderen we met CSS:
 
 ```css
-.item-{
+.item-1{
   background-color: green;
 }
 ```
@@ -120,6 +114,7 @@ We gaan verder met het volgende item. De blauwe. De blauwe begint bij `kolom 2` 
   grid-row-start: 1;
   grid-row-end: 6;
 }
+
 ```
 
 Wat heb je nu? Staat de blauwe item correct?

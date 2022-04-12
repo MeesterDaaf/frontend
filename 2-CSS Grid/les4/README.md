@@ -6,8 +6,7 @@
 
 Met CSS Grid kunnen we ook vlaggen van landen gaan maken met CSS
 
-
-### Oefening 1.
+### Oefening 1
 
 Stel je neemt de vlag van Oekraine.
 
@@ -70,7 +69,6 @@ Deze heeft 1 rij en 3 kolommen.
 </style>`
 ```
 
-
 ### Oefening 3
 
 Probeer nu eens de vlag van Finland zelf te maken.
@@ -106,9 +104,3 @@ Als je goed kijkt dan zie je 6 items staan:
 
 Dan moet je je ook realiseren dat er een `gap` is tussen de elementen. Dit kan je op de container zetten.
 Probeer het maar eens.
-
-
-
-
-
-
