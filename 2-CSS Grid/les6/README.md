@@ -75,6 +75,7 @@ Je kunt je Grid gebieden namen geven. Bijvoorbeeld kun je de drie kolommen waar 
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: 1fr 6fr 2fr;
+
     grid-template-areas:  /* Dit is toegevoegd aan bovenstaande code */
     "header header header"
   }
@@ -131,6 +132,7 @@ Je codeert alsof je tekent:
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: 1fr 6fr 2fr;
+
     grid-template-areas:  /* Dit is toegevoegd aan bovenstaande code */
     "header header header"
     "links content rechts"
@@ -144,16 +146,8 @@ Je ziet dat we tekstueel het grid hebben nagetekend. Nu gaan we de items eraan k
 
 ```html
 <style>
-  .container{
-    display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: 1fr 6fr 2fr;
-    grid-template-areas:  /* Dit is toegevoegd aan bovenstaande code */
-    "header header header"
-    "links content rechts"
-    "footer footer footer"
-  }
 
+   /* Dit is toegevoegd aan bovenstaande code */
   .header{
     background-color: red;
     grid-area: header;
