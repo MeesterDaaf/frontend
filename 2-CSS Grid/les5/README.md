@@ -4,118 +4,50 @@
 
 ### Introductie
 
-Nu we wat bekend zijn met CSS GRID gaan we onze kennis verder uitbreiden.
+Je bent nu bekend met Grid Line, Grid Cell, Grid Area. We gaan even inzoomen op de Grid Lines (Grid Lijnen). Je kunt deze lijnen namelijk hele specifieke namen geven.
 
-### CSS GRID Template
+### CSS GRID Line Naming
 
-Je kunt items op het grid plaatsen door de plekken op het grid specific te benoemen.
-
-Bekijk eens het onderstaande plaatje.
-
-![GRID Template](images/template-area.jpg)
-
-Je ziet in dit Grid 5 items.
-
-- header
-- sidebar-1
-- content
-- sidebar-r
-- footer
-
-We gaan eerst even een grid maken (dit is dus herhaling) met items erin.
+Stel je maakt een grid:
 
 ```html
-
 <div class="container">
-  <header class="header">Header</header>
-  <aside class="sidebar-l">Sidebar-1</aside>
-  <main class="content"></main>
-  <aside class="sidebar-r"></aside>
-  <footer class="footer"></footer>
+  <div class="items item-1">1</div>
+  <div class="items item-2">2</div>
+  <div class="items item-3">3</div>
 </div>
 
 <style>
-
-.container {
-  display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: 1fr 6fr 2fr;
-  height: 600px;
-}
-
-.header{
-  background-color: red;
-}
-
-.sidebar-1{
-  background-color: blue;
-}
-
-.content{
-  background-color: green;
-}
-
-.sidebar-r{
-  background-color: orange;
-}
-.footer{
-  background-color: lightblue;
-}
-</style>
-```
-
-![Result](images/result-grid-template.png)
-
-Je kunt je Grid gebieden namen geven. Bijvoorbeeld kun je de drie kolommen waar de header moet komen _header_ noemen. Dat ziet er dan zo uit:
-
-```html
-
-<style>
   .container{
-     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: 1fr 6fr 2fr;
-    grid-template-areas:  /* Dit is toegevoegd aan bovenstaande code */
-    "header header header"
+    display: grid;
+    grid-template-columns: [begin-eerste kolom] 1fr [begin-tweede-kolom] 5fr [begin-derde-kolom] 1fr [eind-derde-kolom];
   }
 </style>
 ```
 
-De `<header>` wordt dus verdeeld over 3 kolommen.
-
-Daarna moeten we de elementen koppelen aan het Grid. Dat doen we zo:
-
-```html
-<style>
-  /*...aanvullen van je code ..*/
-
-  .header{
-      grid-area: header; /* hiermee koppelen het element aan een deel van het grid */
-  }
-</style>
-```
-
-Je geeft dus aan dat het `<header>`-element verdeeld moet worden. En die code had je zo opgeschreven:
+Je hebt de kolom-lijnen nu namen gegeven. Hoe kun je ze gebruiken? Nou probeer maar eens de volgende code uit!
 
 ```css
+  .item-1 {
+    grid-column-start: begin-tweede-kolom;
+}
 
-.container{
- grid-template-areas:  /* Dit is toegevoegd aan bovenstaande code */
-    "header header header"
+.item-3 {
+    grid-column-start: begin-eerste-kolom;
+    grid-column-end: begin-tweede-kolom;
+    grid-row-start: 1;
 }
 ```
 
-Je kunt ook aangeven als een er een ruimte leeg moet blijven. Dit doen we met een `.`
+De `<div class="item item-1">` begint pas bij `grid-column-line` 2. Maar nu gebruiken we niet het cijfer 2 maar de naam `begin-tweede-kolom`. Dit kan handig zijn als je met een bepaald design werkt en naamgeving expliciet (heel duidelijk) moet zijn.
 
-Probeer je code eens te veranderen:
+Uiteraard kun je deze techniek ook toepassen op de rijen
 
-```html
-<style>
+Dan voeg je bijvoorbeeld onderstaande code toe aan je container.
+
+```css
 .container{
- grid-template-areas:  /* Dit is toegevoegd aan bovenstaande code */
-    "header header ."
+  grid-template-rows{
+    [begin-rij-1] 50px [tweede-rij] 100px [oke-nog-eentje-dan]auto[laatste-rij]
+  }
 }
-</style>
-```
-
-
