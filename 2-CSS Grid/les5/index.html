@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les 4</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header"></header>
+        <aside class="sidebar-l"></aside>
+        <main class="content"></main>
+        <aside class="sidebar-r"></aside>
+        <footer class="footer"></footer>
+      </div>
+      
+      <style>
+        
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        grid-template-rows: 1fr 6fr 2fr;
+        height: 600px;
+    
+        grid-template-areas:  /* Dit is toegevoegd aan bovenstaande code */
+            "header header header"
+        }
+
+    .header{
+          background-color: red;
+          grid-area: header;
+    }
+
+    .sidebar-1{
+          background-color: blue;
+    }
+
+    .content{
+        background-color:green;
+    }
+
+    .sidebar-r{
+        background-color:orange;
+    }
+    .footer{
+        background-color: lightblue;
+    }
+      </style>
+</body>
+
+</html>
